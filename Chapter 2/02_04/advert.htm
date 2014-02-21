@@ -3,18 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <title>Traced Bird Ad</title>
-<style>
-#outerWrapper {
-	width: 1000px;
-	margin: 30px auto;
-	position: relative;
-}
-#logo {
-	position: absolute;
-	top: 37px;
-	left: 39px;
-}
-</style>
+<script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script>
+<link rel="stylesheet" href="styles.css">
 </head>
 
 <body class="loaded"><div id="outerWrapper">
@@ -22,5 +12,31 @@
   <div id="logo">
   <img src="_images/birds.png" width="312" height="198" alt="logo"> </div>
   </div>
+  
+<script>
+var bird = (function() {
+	// variables
+	var selectIcon = document.querySelector('div#logo');
+	
+	// main	
+	animateBirder = function() {
+		return selectIcon.className = "animated";
+	}
+	
+	// listeners
+	window.addEventListener('load', animateBirder, false);
+})();
+
+
+
+
+
+/*
+    $(document).ready(function() {
+	    $("#logo").addClass("animated");
+    });
+	*/
+</script>
+
 </body>
 </html>

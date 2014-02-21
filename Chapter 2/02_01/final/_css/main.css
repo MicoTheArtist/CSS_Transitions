@@ -301,9 +301,6 @@ section.info li a {
 	display: block;
 	background-color: #FBAE2C;
 	/* new */
-	-moz-transition: background-color .75s ease;
-	-o-transition: background-color .75s ease;
-	-webkit-transition: background-color .75s ease;
 	transition: background-color .75s ease;
 }
 section.info li a:hover {

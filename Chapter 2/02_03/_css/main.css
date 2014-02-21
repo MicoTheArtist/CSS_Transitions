@@ -677,4 +677,11 @@ footer .col2 {
 	margin: 20px;
 	width: 180px;
 	height: 180px;
+	transition:all .5s ease;
+}
+
+#theArt img:hover {
+	-webkit-transform: scale(1.5);
+	box-shadow:3px 3px 5px #000;
+	backface-visibility:hidden;
 }
